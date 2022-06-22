@@ -1,0 +1,43 @@
+{% extends 'ecom/customer_base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+
+</head>
+<style media="screen">
+
+.container {
+  top: 10%;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+</style>
+<br><br><br>
+<div class="container">
+    <div class="vertical-center">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#" style="background-color: #ff6600;"><span
+                    class="badge pull-right">{{total}}</span> Final Price</a>
+            </li>
+        </ul>
+        <br/>
+        <a href="/order_placement_success" class="btn btn-primary btn-lg btn-block" role="button">Place the order</a>
+    </div>
+</div>
+<br>
+
+
+{% endblock content %}
